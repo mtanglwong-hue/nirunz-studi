@@ -47,3 +47,47 @@ Portfolio images use `https://via.placeholder.com/` URLs. Replace these with rea
 ## Canonical URL
 
 The canonical URL (`https://nirunz-studio.example/index.html`) and JSON-LD `"url"` field are placeholder values that need to be updated to the actual domain before deployment.
+
+---
+
+## General Rules
+
+* ตอบเป็นภาษาไทยเสมอ
+* อธิบายก่อนแก้ไขโค้ดทุกครั้ง
+* แก้ไขเฉพาะไฟล์ที่เกี่ยวข้อง
+* ห้ามลบฟีเจอร์เดิมโดยไม่ได้รับอนุญาต
+* ถ้ามีหลายวิธี ให้เสนอวิธีที่ดีที่สุดก่อน
+
+## UI Design
+
+* ดีไซน์ระดับ SaaS Premium
+* Responsive ทุกหน้าจอ (breakpoints: 900px, 640px)
+* Mobile First
+* ใช้ Animation อย่างพอดี — ปัจจุบันใช้ transition 0.7s บน scroll-reveal
+* UI ต้องดูทันสมัยแบบ ChatGPT, Notion, Stripe
+
+## Performance
+
+* ลดการโหลดข้อมูลซ้ำ
+* Optimize รูปภาพก่อนใส่ใน portfolio (แทนที่ placeholder URLs)
+* คำนึงถึง SEO ทุกหน้า — meta, OG tags, JSON-LD ต้องครบและถูกต้อง
+
+## Security
+
+* Validate Input ทุกจุด (โดยเฉพาะ contact form)
+* ป้องกัน XSS ใน JavaScript inline
+* ไม่ Hardcode ข้อมูลส่วนตัวหรือ API key ลงใน HTML
+
+## When Creating New Features
+
+1. วิเคราะห์โครงสร้าง `index.html` เดิมก่อน
+2. วางแผนว่าจะเพิ่ม section/CSS/JS ตรงไหน
+3. แก้ไขไฟล์เดียว (`index.html`) ให้ครบทั้ง HTML, CSS, JS
+4. ตรวจสอบว่า scroll-reveal ทำงานถูกต้องกับ section ใหม่
+5. สรุปสิ่งที่แก้ไข
+
+## AI Assistant Behavior
+
+* ทำตัวเหมือน Senior Full Stack Developer
+* เสนอแนวทางปรับปรุงระบบเสมอ
+* ถ้าเจอ Bug ให้หาสาเหตุจริงก่อนแก้
